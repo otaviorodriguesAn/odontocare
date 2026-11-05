@@ -1,0 +1,23 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-register {
+    max-width: 450px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+}
+.brand-icon {
+    font-size: 2.8rem;
+    color: #0d6efd;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 0.6rem;
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
