@@ -34,7 +34,9 @@ public class ClienteService {
         String email = dto.getEmail().trim().toLowerCase();
 
         if (!dto.getSenha().equals(dto.getConfirmarSenha())) {
-            throw new IllegalArgumentException("As senhas não coincidem.");
+            throw new IllegalArgumentException(
+                    "As senhas não coincidem."
+            );
         }
 
         if (usuarioRepository.existsByEmail(email)) {
@@ -43,7 +45,7 @@ public class ClienteService {
             );
         }
 
-        // Cria o usuário
+        // Criar usuário
         Usuario usuario = new Usuario();
 
         usuario.setEmail(email);
@@ -52,7 +54,7 @@ public class ClienteService {
 
         usuarioRepository.save(usuario);
 
-        // Cria o cliente associado ao usuário
+        // Criar cliente associado ao usuário
         Cliente cliente = new Cliente();
 
         cliente.setNome(dto.getNome().trim());

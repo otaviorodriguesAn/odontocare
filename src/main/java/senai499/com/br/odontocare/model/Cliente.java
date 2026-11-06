@@ -1,3 +1,4 @@
+
 package senai499.com.br.odontocare.model;
 
 import jakarta.persistence.*;
@@ -21,11 +22,8 @@ public class Cliente {
     )
     private Usuario usuario;
 
-    // Construtor vazio
     public Cliente() {
     }
-
-    // Getters e Setters
 
     public Long getId() {
         return id;
