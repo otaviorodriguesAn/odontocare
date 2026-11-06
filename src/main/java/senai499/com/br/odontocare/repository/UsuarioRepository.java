@@ -1,4 +1,9 @@
 package senai499.com.br.odontocare.repository;
 
-public interface UsuarioRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import senai499.com.br.odontocare.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+
+    boolean existsByEmail(String email);
 }

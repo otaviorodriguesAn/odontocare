@@ -22,8 +22,4 @@ public class HomeController {
     }
 
 
-    @GetMapping("/cadastro")
-    public String cadastro() {
-        return "cadastro";
-    }
 }
